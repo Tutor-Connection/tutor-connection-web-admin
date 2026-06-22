@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* TutorMatch Theme Colors */
+  --color-brand-primary-950: #001036;
+  --color-brand-primary-900: #001f5c;
+  --color-brand-primary-800: #00318f;
+  --color-brand-primary-700: #0045c2;
+  --color-brand-primary-600: #005cf5;
+  --color-brand-primary-500: #2979ff;
+  --color-brand-primary-400: #5c99ff;
+  --color-brand-primary-300: #8eb8ff;
+  --color-brand-primary-200: #c2d8ff;
+  --color-brand-primary-100: #e0ecff;
+  --color-brand-primary-50: #f0f5ff;
+
+  --color-brand-orange-500: #fd761a;
+  --color-brand-orange-600: #dc5c07;
+  --color-brand-orange-100: #ffecd1;
+  --color-brand-orange-50: #fff6eb;
+
+  --color-brand-green-500: #008a5a;
+  --color-brand-green-600: #007048;
+  --color-brand-green-100: #e1f7ec;
+  --color-brand-green-50: #f0fbf5;
+
+  /* Secondary & Neutral shades */
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+
+  /* Console Theme Colors */
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  
+  --color-tm-surface: #f9f9ff;
+  --color-tm-surface-dim: #d3daef;
+  --color-tm-surface-bright: #f9f9ff;
+  --color-tm-surface-lowest: #ffffff;
+  --color-tm-surface-low: #f1f3ff;
+  --color-tm-surface-container: #e9edff;
+  --color-tm-surface-high: #e1e8fd;
+  --color-tm-surface-highest: #dce2f7;
+  --color-tm-on-surface: #141b2b;
+  --color-tm-on-surface-variant: #434655;
+  --color-tm-inverse-surface: #293040;
+  --color-tm-inverse-on-surface: #edf0ff;
+  --color-tm-outline: #747686;
+  --color-tm-outline-variant: #c4c5d7;
+  
+  --color-tm-primary: #0037b0;
+  --color-tm-on-primary: #ffffff;
+  --color-tm-primary-container: #1d4ed8;
+  --color-tm-on-primary-container: #cad3ff;
+  
+  --color-tm-secondary: #9d4300;
+  --color-tm-on-secondary: #ffffff;
+  --color-tm-secondary-container: #fd761a;
+  
+  --color-tm-tertiary: #004f35;
+  --color-tm-on-tertiary: #ffffff;
+  --color-tm-tertiary-container: #006a48;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #f8fafc;
+    color: var(--color-slate-900);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-slate-300);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-slate-400);
+}
+
+/* Glassmorphism effects */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-panel-dark {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+

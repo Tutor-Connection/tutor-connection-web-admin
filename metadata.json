@@ -1,0 +1,6 @@
+{
+  "name": "TutorMatch Admin",
+  "description": "Central Management System for matching tutors and students with AI-driven insights, user management, subject categories, and KYC verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
