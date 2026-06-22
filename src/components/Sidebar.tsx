@@ -74,8 +74,7 @@ export default function Sidebar({
       }`}
     >
       {/* Brand logo header */}
-      <div>
-        <div className="p-6 flex items-center justify-between border-b border-white/5">
+      <div className="p-6 flex items-center justify-between border-b border-white/5 shrink-0">
           <div className="flex items-center gap-3 overflow-hidden">
             <div className="w-9 h-9 rounded-xl bg-brand-primary-600 flex items-center justify-center text-white shrink-0 shadow-md shadow-brand-primary-900">
               <span className="font-extrabold text-sm">T</span>
@@ -96,7 +95,7 @@ export default function Sidebar({
         </div>
 
         {/* Menu Navigation */}
-        <nav className="p-4 space-y-1.5 mt-4">
+        <nav className="p-4 space-y-1.5 mt-2 flex-1 overflow-y-auto min-h-0 nav-scrollbar">
           {menuItems.map((item) => {
             const IconComponent = item.icon;
             const isActive = currentTab === item.id;
@@ -143,10 +142,9 @@ export default function Sidebar({
             );
           })}
         </nav>
-      </div>
 
       {/* Admin User Profile footer matching Image 12 layout */}
-      <div className="p-4 border-t border-white/5 bg-slate-950/20">
+      <div className="p-4 border-t border-white/5 bg-slate-950/20 shrink-0">
         <div className="flex items-center gap-3 p-2 rounded-xl bg-white/5">
           <img 
             src={adminInfo.avatar} 
